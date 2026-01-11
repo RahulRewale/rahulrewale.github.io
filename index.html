@@ -60,8 +60,8 @@
 
     .timeline {
       position: relative;
-      margin-left: 20px; /* space for the vertical line */
-      padding-left: 20px;
+      margin-left: 180px; /* space for dates */
+      padding-left: 20px; /* space between line and content */
       border-left: 2px solid #ccc; /* vertical timeline line */
     }
     
@@ -72,8 +72,8 @@
     
     .timeline-date {
       position: absolute;
-      left: -150px; /* move dates to the left of vertical line */
-      width: 140px; /* fixed width for alignment */
+      left: -180px;  /* move date left of the timeline line */
+      width: 160px;  /* fixed width for date */
       text-align: right;
       font-weight: bold;
       color: #555;
@@ -81,7 +81,7 @@
     }
     
     .timeline-content {
-      padding-left: 20px;
+      padding-left: 10px; /* small padding after timeline line */
     }
     
     @media screen and (max-width: 700px) {
