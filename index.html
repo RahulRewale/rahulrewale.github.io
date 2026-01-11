@@ -37,6 +37,7 @@
 
     li {
       margin-bottom: 6px;
+      margin-left: -10px;
     }
 
     .subtitle {
@@ -60,8 +61,8 @@
 
     .timeline {
       position: relative;
-      margin-left: 170px; /* space for dates */
-      padding-left: 20px; /* space between line and content */
+      margin-left: 130px; /* space for dates */
+      padding-left: 30px; /* space between line and content */
       border-left: 2px solid #ccc; /* vertical timeline line */
     }
     
@@ -72,7 +73,7 @@
     
     .timeline-date {
       position: absolute;
-      left: -180px;  /* move date left of the timeline line */
+      left: -160px;  /* move date left of the timeline line */
       width: 100px;  /* fixed width for date */
       text-align: right;
       font-weight: bold;
@@ -81,24 +82,10 @@
     }
     
     .timeline-content {
-      padding-left: 10px; /* small padding after timeline line */
+      padding-left: 0px; /* small padding after timeline line */
     }
-    
-    @media screen and (max-width: 700px) {
-      .timeline-date {
-        position: relative;
-        left: 0;
-        width: auto;
-        text-align: left;
-        margin-bottom: 5px;
-      }
-      .timeline {
-        margin-left: 0;
-        padding-left: 0;
-        border-left: none;
-      }
-    }
-  </style>
+   
+   </style>
 </head>
 
 <body>
