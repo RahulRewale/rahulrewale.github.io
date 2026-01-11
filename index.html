@@ -5,12 +5,12 @@
   <title>Rahul Rewale | Senior Robotics Perception Engineer</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Senior Robotics Perception Engineer with 3+ years of experience in computer vision, deep learning, and autonomous robots." />
+  <meta name="description" content="Senior Robotics Perception Engineer with 3+ years of experience in computer vision, deep learning, robotics, and autonomous systems." />
 
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 40px 20px;
       line-height: 1.6;
@@ -27,6 +27,19 @@
       padding-bottom: 5px;
     }
 
+    .header-center {
+      text-align: center;
+      margin-bottom: 30px; /* space before main content */
+    }
+
+    .header-center .links a {
+      margin: 0 10px; /* horizontal spacing */
+      margin-right: 15px;
+      font-weight: bold;
+      text-decoration: underline;
+      color: #0066cc;
+    }
+
     p {
       margin: 8px 0;
     }
@@ -37,7 +50,6 @@
 
     li {
       margin-bottom: 6px;
-      margin-left: -10px;
     }
 
     .subtitle {
@@ -84,26 +96,45 @@
     .timeline-content {
       padding-left: 0px; /* small padding after timeline line */
     }
+
+    /*.timeline-content a::after {
+      content: " ↗";
+      font-size: 12px;
+    }*/
+
+    .work-media {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    /*@media (max-width: 768px) {
+      .media-item {
+        width: 100%;
+      }
+    }*/
    
    </style>
 </head>
 
 <body>
 
-  <h1>Rahul Rewale</h1>
-  <p class="subtitle">Senior Robotics Perception Engineer</p>
+  <div class="header-center">
+    <h1>Rahul Rewale</h1>
+    <p class="subtitle">Senior Robotics Perception Engineer • Pune, India</p>
 
-  <div class="links">
-    <a href="https://www.linkedin.com/in/rahul-rewale/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/RahulRewale" target="_blank">GitHub</a>
-    <!-- Add resume.pdf to repo and uncomment below -->
-    <!-- <a href="resume.pdf" target="_blank">Resume</a> -->
+    <div class="links">
+      <a href="mailto:rahul.rewale95@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/rahul-rewale/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/RahulRewale" target="_blank">GitHub</a>
+      <a href="https://drive.google.com/file/d/1-Sr4iQ2SlYov8kRiTQX9Qp8kktQiueWa/view?usp=sharing" target="_blank">Resume</a>
+    </div>
   </div>
 
   <p>
-    Senior Robotics Perception Engineer with <strong>6 years of total industry experience</strong>, including <strong>3+ years specializing in computer vision, deep learning, robotics 
-    and autonomous systems</strong>.
-    Specialized in building and deploying perception systems for <strong> autonomous vehicles </strong> and <strong> mobile robots in warehouse environments</strong>
+    Senior Robotics Perception Engineer with <strong>6 years of total industry experience</strong>, including <strong>3+ years specializing in computer vision, deep learning, robotics, and autonomous systems</strong>.
+    Experienced in building and deploying perception systems for <strong>autonomous vehicles</strong> and <strong>mobile robots in warehouse environments</strong>
   </p>
 
   <h2>Skills</h2>
@@ -143,18 +174,16 @@
       <div class="timeline-date">Mar 2024 – Aug 2025</div>
       <div class="timeline-content">
         <strong>Senior / Founding Perception Engineer</strong><br />
-        Humro, Pune
+        <a href="https://humro.com" target="_blank" rel="noopener noreferrer">Humro</a>, Pune
         <ul>
-          <li>First hire in the robotics department; took complete ownership of the perception system and led all perception efforts independently</li>
-          <li>Built perception for Autonomous Mobile Robots (AMRs) and autonomous forklifts for warehouse automation</li>
+          <li>Built the perception stack end-to-end for autonomous forklifts and deployed on robots for warehouse automation </li>
           <li>Trained YOLOv8 to detect multiple pallet types and loads; exported PyTorch models to TensorRT (FP16) and deployed on NVIDIA Jetson AGX Orin (<60ms inference at 1280 resolution)</li>
-          <li>Estimated 3D pose (x, y, z, yaw) of pallets in <260 ms including detection</li>
-          <li>Developed LiDAR + RGB-D fusion algorithms for obstacle detection</li>
-          <li>Configured SICK nanoscan3 safety lidars and wrote ROS wrappers for cameras and lidars</li>
+          <li>Estimated 3D pose (x, y, z, yaw) of pallets using a 3D camera in <260 ms including detection</li>
+          <li>Calibrated and fused multiple 2D & 3D LiDAR point clouds for obstacle detection</li>
+          <li>Configured multiple SICK nanoscan3 safety lidars for obstacle avoidance </li>
+          <li>Modified and configured camera and lidar drivers; wrote ROS wrappers when needed</li>
           <li>Designed 2D pose (x, y, theta) estimation algorithm for warehouse trolleys and chargers using a single 2D lidar</li>
           <li>Created Docker images with CUDA, TensorRT, OpenCV, and ROS for development and robot deployment</li>
-          <li>Developed vision-based safety system using YOLOv8 keypoint detection to slow or stop robots when humans enter operating zones</li>
-          <li>Worked with sensors: VZense NYX650, Intel RealSense D435i, LuminWave D301C, Livox Mid-360, Pepperl+Fuchs R2000, SICK nanoscan3-pro, Elco OSM40</li>
         </ul>
       </div>
     </div>
@@ -164,18 +193,42 @@
       <div class="timeline-date">Jul 2022 – Sep 2023</div>
       <div class="timeline-content">
         <strong>Research Engineer</strong><br />
+        <a href="https://sites.google.com/iiitd.ac.in/iiitd-alive/" target="_blank" rel="noopener noreferrer">Autonomous Last Mile Vehicle</a> <br/>
         Indraprastha Institute of Information Technology, Delhi (IIIT-D)
         <ul>
-          <li>Worked on Autonomous Last Mile Vehicle (ALIVE) project sponsored by MeitY, Govt. of India</li>
-          <li>Trained and deployed YOLOP on BDD100k and self-collected datasets for road object detection and drivable area/lane segmentation</li>
+          <li>Worked on Autonomous Last mIle VEhicle (ALIVE) project sponsored by Ministry of Electronics and Information Technology, Govt. of India</li>
+          <li>Trained and deployed YOLOP on BDD100k and self-collected datasets for road object detection and drivable area and lane line segmentation</li>
           <li>Performed LiDAR-LiDAR calibration and fusion to reduce blind spots</li>
-          <li>Estimated road plane slope by fusing LiDAR and YOLOP outputs</li>
+          <li>Estimated road plane slope by fusing LiDAR point clouds and YOLOP segmentation output</li>
           <li>Integrated perception with planning modules using ROS and behavior trees</li>
-          <li>Added virtual obstacles in occupancy grids for safer testing</li>
+          <li>Added virtual obstacles in occupancy grids for safer testing on the ego vehicle</li>
           <li>Created HD maps by fusing LiDAR and camera data</li>
-          <li>Conducted testing in CARLA simulator and on ego vehicle</li>
-          <li>Mentored students, interns, and engineers</li>
         </ul>
+
+        <div class="work-media">
+          <ul>
+            <li>
+              <a href="https://drive.google.com/file/d/1sMzXKrffvn9E-EvlCjewXN7pcQ_aG6oc/view?usp=sharing" target="_blank" rel="noopener">
+                ▶ YOLOP inference on BDD100K test video
+              </a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1_nNTyzcEvixAv6VoSsKgBnXOCfJS4aOV/view?usp=sharing" target="_blank" rel="noopener">
+                ▶ LiDAR–LiDAR calibration and point cloud fusion
+              </a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1RUMA9-XaGWSH9Es2LDhxhAMNthqD5h8N/view?usp=sharing" target="_blank" rel="noopener">
+                ▶ HD map generation using YOLOP road segmentation
+              </a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1MsTShpyc9ypNrTg3GmR6xJ6YrZaetRWa/view?usp=sharing" target="_blank" rel="noopener">
+                ▶ Autonomous run on ego vehicle (closed campus)
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -223,16 +276,32 @@
   
   </div>
 
+  <h2>Education</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">July 2013 – May 2017</div>
+      <div class="timeline-content">
+        <strong>Bachelor of Technology</strong><br/>
+        Vishwakarma Institute of Technology, Pune<br/>
+        Savitribai Phule Pune University<br/>
+        CGPA: 8.61/10.0
+      </div>
+    </div>
+  </div>
 
-  <h2>Contact</h2>
-  <p>
-    Email: <strong>rahul.rewale95@gmail.com</strong><br />
-    LinkedIn: <a href="https://www.linkedin.com/in/rahul-rewale" target="_blank">linkedin.com/in/rahul-rewale</a>
-  </p>
 
   <footer>
-    © Rahul Rewale
+    © Rahul Rewale · Last updated: <span id="last-updated"></span>
   </footer>
 
+  <script>
+    const lastUpdated = new Date(document.lastModified);
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    document.getElementById('last-updated').textContent =
+      lastUpdated.toLocaleDateString('en-US', options);
+  </script>
+
 </body>
+
+
 </html>
